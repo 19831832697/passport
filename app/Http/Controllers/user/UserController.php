@@ -21,19 +21,12 @@ class UserController extends Controller
        $user_email=$data['user_email'];
        $user_pwd=$data['user_pwd'];
 
-       if(empty($user_name)){
-           $res=[
-               'code'=>40002,
-               'msg'=>'用户名不能为空'
+       if(empty($user_name)) {
+           $res = [
+               'code' => 40002,
+               'msg' => '用户名不能为空'
            ];
-           return json_encode($res,JSON_UNESCAPED_UNICODE);
-       }
-       if(empty($user_email)){
-           $res=[
-               'code'=>40002,
-               'msg'=>'邮箱不能为空'
-           ];
-           return json_encode($res,JSON_UNESCAPED_UNICODE);
+           return json_encode($res, JSON_UNESCAPED_UNICODE);
        }
        if(empty($user_pwd)){
            $res=[
