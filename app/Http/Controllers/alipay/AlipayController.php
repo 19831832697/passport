@@ -50,8 +50,8 @@ class AlipayController extends Controller
         //业务参数
         $bizcont = [
             'subject'           => 'Lening-Order: ' .$oid,
-            'out_trade_no'      => $oid,
-            'total_amount'      => $order_info->order_amount / 100,
+            'out_trade_no'      => $order_info->order_no,
+            'total_amount'      => $order_info->order_amount,
             'product_code'      => 'QUICK_WAP_WAY',
         ];
         //公共参数
@@ -76,7 +76,6 @@ class AlipayController extends Controller
         }
         $url = rtrim($param_str,'&');
         $url = $this->gate_way . $url;
-//        print_r($url);die;
         return redirect($url,302);
 //        header("Location:".$url);       // 重定向到支付宝支付页面
     }
