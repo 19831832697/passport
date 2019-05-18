@@ -67,6 +67,7 @@ class AlipayController extends Controller
             'return_url'   => $this->return_url,        // 同步通知地址
             'biz_content'   => json_encode($bizcont),
         ];
+
         //签名
         $sign = $this->rsaSign($data);
         $data['sign'] = $sign;
@@ -76,7 +77,9 @@ class AlipayController extends Controller
         }
         $url = rtrim($param_str,'&');
         $url = $this->gate_way . $url;
-        header("Location:".$url);       // 重定向到支付宝支付页面
+        return redirect($url,302);
+
+
     }
 
     public function rsaSign($params) {
