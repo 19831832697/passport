@@ -148,9 +148,10 @@ class AlipayController extends Controller
     public function notify()
     {
         $p = json_encode($_POST);
+        var_dump($p);die;
         $log_str = "\n>>>>>> " .date('Y-m-d H:i:s') . ' '.$p . " \n";
         file_put_contents('/logs/alipay_notify',$log_str,FILE_APPEND);
-        echo 'success';
+        echo 'success';die;
         //TODO 验签 更新订单状态
         $out_trade_no=$p['out_trade_no'];
         $where=[
