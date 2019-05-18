@@ -20,3 +20,4 @@ Route::post('login','user\UserController@login');//登录通行
 Route::post('center','user\UserController@center');//登录通行
 Route::post('cart','goods\GoodsController@cart');//登录通行
 Route::get('zPay','alipay\AlipayController@zPay');//支付通行
+Route::get('test','alipay\AlipayController@test');//支付通行
