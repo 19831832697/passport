@@ -162,7 +162,6 @@ class AlipayController extends Controller
             'status'=>2,
         ];
         $aa=DB::table('shop_order')->where($where)->update($updateInfo);
-        var_dump($aa);die;
         //修改订单详情表
         $detailInfo=[
             'buy_num'=>0,
