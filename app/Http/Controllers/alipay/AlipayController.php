@@ -54,6 +54,7 @@ class AlipayController extends Controller
             'total_amount'      => $order_info->order_amount,
             'product_code'      => 'QUICK_WAP_WAY',
         ];
+        var_dump($bizcont);die;
         //公共参数
         $data = [
             'app_id'   => $this->app_id,
