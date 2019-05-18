@@ -125,6 +125,7 @@ class AlipayController extends Controller
             return true;
         return false;
     }
+
     /**
      * 转换字符集编码
      * @param $data
@@ -151,7 +152,24 @@ class AlipayController extends Controller
         file_put_contents('/logs/alipay_notify',$log_str,FILE_APPEND);
         echo 'success';
         //TODO 验签 更新订单状态
+        $out_trade_no=$p['out_trade_no'];
+        $where=[
+            'order_no'=>$out_trade_no
+        ];
+        //修改订单表
+        $updateInfo=[
+            'pay_status'=>2,
+            'status'=>2,
+        ];
+        DB::table('shop_order')->where($where)->update($updateInfo);
+        //修改订单详情表
+        $detailInfo=[
+            'buy_num'=>0,
+            'utime'=>time(),
+        ];
+        DB::table('shop_order_detail')->where($where)->update($detailInfo);
     }
+
     /**
      * 支付宝同步通知
      */
