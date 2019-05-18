@@ -68,6 +68,7 @@ class AlipayController extends Controller
             'return_url'   => $this->return_url,        // 同步通知地址
             'biz_content'   => json_encode($bizcont),
         ];
+        var_dump($data);die;
         //签名
         $sign = $this->rsaSign($data);
         $data['sign'] = $sign;
