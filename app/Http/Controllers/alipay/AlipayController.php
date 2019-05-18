@@ -76,6 +76,7 @@ class AlipayController extends Controller
         }
         $url = rtrim($param_str,'&');
         $url = $this->gate_way . $url;
+        print_r($url);die;
         header("Location:".$url);       // 重定向到支付宝支付页面
     }
 
