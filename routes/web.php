@@ -21,4 +21,4 @@ Route::post('center','user\UserController@center');//登录通行
 Route::post('cart','goods\GoodsController@cart');//登录通行
 Route::get('zPay','alipay\AlipayController@zPay');//支付通行
 Route::post('notify','alipay\AlipayController@notify');//异步回调
-Route::post('aliReturn','alipay\AlipayController@aliReturn');//同步回调
+Route::get('aliReturn','alipay\AlipayController@aliReturn');//同步回调

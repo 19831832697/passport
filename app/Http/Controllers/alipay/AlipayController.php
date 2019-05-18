@@ -37,9 +37,7 @@ class AlipayController extends Controller
      */
     public function zPay(Request $request)
     {
-//        print_r($_GET);die;
         $oid=$_GET['order_id'];
-//        var_dump($oid) ;die;
         //验证订单状态 是否已支付 是否是有效订单
         $order_info = DB::table('shop_order')->where(['order_id'=>$oid])->first();
 //        var_dump($order_info);die;
@@ -150,7 +148,7 @@ class AlipayController extends Controller
     {
         $p = json_encode($_POST);
         $log_str = "\n>>>>>> " .date('Y-m-d H:i:s') . ' '.$p . " \n";
-        file_put_contents('logs/alipay_notify',$log_str,FILE_APPEND);
+        file_put_contents('/logs/alipay_notify',$log_str,FILE_APPEND);
         echo 'success';
         //TODO 验签 更新订单状态
     }
