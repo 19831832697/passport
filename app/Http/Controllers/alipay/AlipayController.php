@@ -79,8 +79,8 @@ class AlipayController extends Controller
         $url = rtrim($param_str,'&');
         $url = $this->gate_way . $url;
 //        echo $url;
-//        return redirect($url,302);
-        header("Location:".$url);       // 重定向到支付宝支付页面
+        return $url;
+        
     }
 
     public function rsaSign($params) {
