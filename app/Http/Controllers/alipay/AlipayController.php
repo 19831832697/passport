@@ -70,15 +70,15 @@ class AlipayController extends Controller
         //签名
         $sign = $this->rsaSign($data);
         $data['sign'] = $sign;
-        print_r($data);
-        echo "<hr/>";
+//        print_r($data);
+//        echo "<hr/>";
         $param_str = '?';
         foreach($data as $k=>$v){
             $param_str .= $k.'='.urlencode($v) . '&';
         }
         $url = rtrim($param_str,'&');
         $url = $this->gate_way . $url;
-        echo $url;
+//        echo $url;
 //        return redirect($url,302);
         header("Location:".$url);       // 重定向到支付宝支付页面
     }
