@@ -114,12 +114,12 @@
     <session id="-1328036923">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="4" />
+          <entry key="project.closed" value="5" />
           <entry key="project.open.time.0" value="1" />
-          <entry key="project.open.time.1" value="2" />
+          <entry key="project.open.time.1" value="3" />
           <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.3" value="1" />
-          <entry key="project.opened" value="5" />
+          <entry key="project.opened" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -138,12 +138,12 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="env" value="113" />
-          <entry key="php" value="1827" />
+          <entry key="php" value="1956" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PHP" value="1827" />
+          <entry key="PHP" value="1956" />
           <entry key="PLAIN_TEXT" value="113" />
         </counts>
       </usages-collector>
@@ -154,8 +154,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/web.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+            <state relative-caret-position="299">
+              <caret line="22" column="11" selection-start-line="22" selection-start-column="11" selection-end-line="22" selection-end-column="11" />
             </state>
           </provider>
         </entry>
@@ -163,22 +163,10 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/alipay/AlipayController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="152" column="19" selection-start-line="152" selection-start-column="19" selection-end-line="152" selection-end-column="19" />
+            <state relative-caret-position="257">
+              <caret line="154" column="13" selection-start-line="154" selection-start-column="13" selection-end-line="154" selection-end-column="13" />
               <folding>
-                <element signature="e#311#746#0#PHP" />
-                <element signature="e#752#886#0#PHP" />
                 <element signature="e#909#963#0#PHP" />
-                <element signature="e#956#2441#0#PHP" />
-                <element signature="e#1665#2143#0#PHP" />
-                <element signature="e#2447#2547#0#PHP" />
-                <element signature="e#2553#2985#0#PHP" />
-                <element signature="e#2991#3611#0#PHP" />
-                <element signature="e#3617#3849#0#PHP" />
-                <element signature="e#3854#3951#0#PHP" />
-                <element signature="e#4045#4342#0#PHP" />
-                <element signature="e#4643#4669#0#PHP" />
-                <element signature="e#4674#4764#0#PHP" />
               </folding>
             </state>
           </provider>
@@ -187,7 +175,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.env">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
+            <state relative-caret-position="1081">
               <caret line="47" column="36" selection-start-line="47" selection-start-column="36" selection-end-line="47" selection-end-column="36" />
             </state>
           </provider>
@@ -316,6 +304,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -348,7 +337,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -388,12 +376,13 @@
       <workItem from="1557993661227" duration="4303000" />
       <workItem from="1558055567328" duration="2607000" />
       <workItem from="1558062159535" duration="2438000" />
-      <workItem from="1558140848166" duration="25082000" />
+      <workItem from="1558140848166" duration="25532000" />
+      <workItem from="1558246363790" duration="1652000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40613000" />
+    <option name="totallyTimeSpent" value="42715000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -470,9 +459,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1679">
           <caret line="87" selection-start-line="86" selection-start-column="1" selection-end-line="87" />
-          <folding>
-            <element signature="e#195#247#0#PHP" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -483,13 +469,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.env">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="47" column="36" selection-start-line="47" selection-start-column="36" selection-end-line="47" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Middleware/VerifyCsrfToken.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="483">
@@ -497,31 +476,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/.env">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1081">
+          <caret line="47" column="36" selection-start-line="47" selection-start-column="36" selection-end-line="47" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/routes/web.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+        <state relative-caret-position="299">
+          <caret line="22" column="11" selection-start-line="22" selection-start-column="11" selection-end-line="22" selection-end-column="11" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/alipay/AlipayController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="152" column="19" selection-start-line="152" selection-start-column="19" selection-end-line="152" selection-end-column="19" />
+        <state relative-caret-position="257">
+          <caret line="154" column="13" selection-start-line="154" selection-start-column="13" selection-end-line="154" selection-end-column="13" />
           <folding>
-            <element signature="e#311#746#0#PHP" />
-            <element signature="e#752#886#0#PHP" />
             <element signature="e#909#963#0#PHP" />
-            <element signature="e#956#2441#0#PHP" />
-            <element signature="e#1665#2143#0#PHP" />
-            <element signature="e#2447#2547#0#PHP" />
-            <element signature="e#2553#2985#0#PHP" />
-            <element signature="e#2991#3611#0#PHP" />
-            <element signature="e#3617#3849#0#PHP" />
-            <element signature="e#3854#3951#0#PHP" />
-            <element signature="e#4045#4342#0#PHP" />
-            <element signature="e#4643#4669#0#PHP" />
-            <element signature="e#4674#4764#0#PHP" />
           </folding>
         </state>
       </provider>
