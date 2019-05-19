@@ -161,9 +161,24 @@ class AlipayController extends Controller
             'status'=>2,
         ];
         $aa=DB::table('shop_order')->where($where)->update($updateInfo);
+        $dataInfo=DB::table('shop_order_detail')->where($where)->get();
+        $data=[];
+        foreach($dataInfo as $k=>$v){
+            $data[]=$v->goods_id;
+        }
+        //查询商品表获取商品库存
+        $arrInfo=DB::table('shop_goods')->whereIn('goods_id',$data)->get();
+        foreach($arrInfo as $k=>$v){
+            $goods_num=$v->goods_num;
+            $goodsInfo=[
+                'goods_num'=>$goods_num-1
+            ];
+            DB::table('shop_goods')->where('goods_id',$v->goods_id)->update($goodsInfo);
+        }
+
+
         //修改订单详情表
         $detailInfo=[
-            'buy_num'=>0,
             'utime'=>time(),
         ];
         DB::table('shop_order_detail')->where($where)->update($detailInfo);
